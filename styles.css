@@ -66,11 +66,22 @@ a:focus-visible {
 }
 
 .site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
   color: #ffffff;
   font-size: 1.05rem;
   font-weight: 800;
   letter-spacing: 0.02em;
   text-decoration: none;
+}
+
+.site-title-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  object-fit: cover;
+  flex: 0 0 auto;
 }
 
 .site-title:hover,
@@ -243,6 +254,11 @@ p {
   .footer-inner {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .site-title-icon {
+    width: 32px;
+    height: 32px;
   }
 
   .site-nav {
