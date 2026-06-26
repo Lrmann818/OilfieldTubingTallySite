@@ -812,6 +812,23 @@ p {
   color: var(--color-accent-dark);
 }
 
+.light-panel .button:hover,
+.light-panel .button:focus-visible,
+.light-panel .button:active,
+.beta-panel .button:hover,
+.beta-panel .button:focus-visible,
+.beta-panel .button:active,
+.how-it-works .button:hover,
+.how-it-works .button:focus-visible,
+.how-it-works .button:active,
+.screenshot-panel .button:hover,
+.screenshot-panel .button:focus-visible,
+.screenshot-panel .button:active {
+  color: #ffffff;
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-bright);
+}
+
 .light-panel .button.primary,
 .beta-panel .button.primary,
 .how-it-works .button.primary,
