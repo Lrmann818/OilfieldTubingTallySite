@@ -793,9 +793,17 @@ p {
   margin: 0;
 }
 
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem 1.25rem;
+}
+
 .footer-inner a {
   color: #dbe7ec;
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.22em;
 }
 
 .footer-inner a:hover,
@@ -846,6 +854,10 @@ p {
 
   .site-nav a {
     padding-inline: 10px;
+  }
+
+  .footer-nav {
+    gap: 0.55rem 1rem;
   }
 
   .two-column,
@@ -931,5 +943,24 @@ p {
     width: 100%;
     max-width: none;
     justify-self: stretch;
+  }
+}
+
+/* Center beta install panel content on desktop */
+@media (min-width: 941px) {
+  .beta-panel {
+    grid-template-columns: minmax(0, 520px) minmax(0, 640px);
+    justify-content: center;
+    column-gap: clamp(3rem, 5vw, 5rem);
+  }
+
+  .beta-panel > div:first-child {
+    justify-self: end;
+    max-width: 520px;
+  }
+
+  .beta-panel > div:last-child {
+    justify-self: start;
+    max-width: 640px;
   }
 }
