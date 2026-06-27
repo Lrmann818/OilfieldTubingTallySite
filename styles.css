@@ -201,6 +201,15 @@ a:focus-visible {
   color: #ffffff;
 }
 
+a:focus-visible {
+  outline: 3px solid var(--color-accent-bright);
+  outline-offset: 3px;
+}
+
+.document a:focus-visible {
+  outline-color: var(--color-accent-dark);
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -956,6 +965,9 @@ p {
 }
 
 .footer-inner a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: #dbe7ec;
   text-decoration-line: underline;
   text-decoration-thickness: 0.08em;
