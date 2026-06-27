@@ -851,6 +851,23 @@ p {
   color: #ffffff;
 }
 
+.button.primary:hover,
+.button.primary:focus-visible {
+  color: #ffffff;
+  background: #073f3a;
+  border-color: var(--color-accent-bright);
+  box-shadow: 0 0 0 3px rgba(24, 210, 192, 0.22), 0 14px 28px rgba(0, 0, 0, 0.24);
+  transform: translateY(-1px);
+}
+
+.button.primary:active {
+  color: #ffffff;
+  background: #052f2b;
+  border-color: var(--color-accent-bright);
+  box-shadow: 0 0 0 2px rgba(24, 210, 192, 0.18), 0 8px 18px rgba(0, 0, 0, 0.22);
+  transform: translateY(1px);
+}
+
 .button:hover,
 .button:focus-visible {
   background: var(--color-accent-dark);
@@ -865,18 +882,18 @@ p {
   color: var(--color-accent-dark);
 }
 
-.light-panel .button:hover,
-.light-panel .button:focus-visible,
-.light-panel .button:active,
-.beta-panel .button:hover,
-.beta-panel .button:focus-visible,
-.beta-panel .button:active,
-.how-it-works .button:hover,
-.how-it-works .button:focus-visible,
-.how-it-works .button:active,
-.screenshot-panel .button:hover,
-.screenshot-panel .button:focus-visible,
-.screenshot-panel .button:active {
+.light-panel .button:not(.primary):hover,
+.light-panel .button:not(.primary):focus-visible,
+.light-panel .button:not(.primary):active,
+.beta-panel .button:not(.primary):hover,
+.beta-panel .button:not(.primary):focus-visible,
+.beta-panel .button:not(.primary):active,
+.how-it-works .button:not(.primary):hover,
+.how-it-works .button:not(.primary):focus-visible,
+.how-it-works .button:not(.primary):active,
+.screenshot-panel .button:not(.primary):hover,
+.screenshot-panel .button:not(.primary):focus-visible,
+.screenshot-panel .button:not(.primary):active {
   color: #ffffff;
   background: var(--color-accent-dark);
   border-color: var(--color-accent-bright);
