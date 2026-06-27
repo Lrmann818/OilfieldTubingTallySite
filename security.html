@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container header-inner">
         <a class="site-title" href="index.html" aria-label="Oilfield Tubing Tally home">
@@ -25,34 +26,55 @@
       </div>
     </header>
 
-    <main class="container page-content narrow">
+    <main class="container page-content narrow" id="main-content" tabindex="-1">
       <article class="card document">
         <h1>Security and Data Storage</h1>
         <p>
-          Oilfield Tubing Tally does not currently use accounts, cloud sync,
-          advertising trackers, third-party analytics, or third-party marketing
-          SDKs.
+          The current iPhone and iPad TestFlight beta does not provide accounts,
+          cloud sync, cloud backup, subscription services, or a developer-operated
+          backend for job data. Planned services are not available in the current
+          beta.
         </p>
 
         <h2>Local device storage</h2>
         <p>
-          Saved job data and app state may be stored locally on the user&apos;s device
-          so work can continue later. Deleting the app or clearing app storage may
-          delete locally stored information.
+          The app is intended to store saved job data and app state locally on the
+          user&apos;s device so work can continue later. Deleting the app or clearing
+          app storage may delete locally stored information. Access to locally
+          stored data depends in part on device and operating-system protections.
         </p>
 
         <h2>User-controlled sharing</h2>
-        <!-- TODO: Recheck this wording if the app later adds export sharing, cloud backup, crash logs, analytics, or support attachments. -->
+        <!-- TODO (owner/legal): Confirm this description against current app export, logging, and TestFlight diagnostic behavior before wider release. -->
         <p>
-          Locally entered job data is not sent to the developer unless the user
-          chooses to send it by email, message, screenshot, print/export, or another
-          external sharing method.
+          The current beta does not automatically sync job data. Users can choose to
+          transmit screenshots, reports, exports, or support messages through email,
+          messaging, printing, or other external services.
+        </p>
+
+        <h2>TestFlight diagnostics</h2>
+        <p>
+          Apple operates TestFlight and may process beta testing data such as crash
+          logs, usage information, and tester feedback. See the
+          <a href="privacy.html">Privacy Policy</a> and
+          <a href="https://www.apple.com/legal/privacy/data/en/test-flight/">Apple&apos;s TestFlight &amp; Privacy notice</a>
+          for more information.
         </p>
 
         <h2>Field data caution</h2>
         <p>
-          Users should avoid sharing screenshots, reports, or exported information
-          if they contain sensitive job details.
+          Do not submit customer, well, lease, personnel, operator, or job data
+          through the website&apos;s Google Forms. Users should avoid sharing
+          screenshots, reports, exported information, or support messages if they
+          contain sensitive job details.
+        </p>
+
+        <h2>Planned services</h2>
+        <!-- TODO (owner/legal): Review security and data-handling wording before any planned account, sync, subscription, or backend service launches. -->
+        <p>
+          Accounts, cloud sync, subscriptions, and backend support are planned, but
+          their implementation may change. None of those services is available in
+          the current beta.
         </p>
       </article>
     </main>

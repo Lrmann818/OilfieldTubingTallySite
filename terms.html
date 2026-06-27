@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container header-inner">
        <a class="site-title" href="index.html" aria-label="Oilfield Tubing Tally home">
@@ -25,7 +26,7 @@
       </div>
     </header>
 
-    <main class="container page-content narrow">
+    <main class="container page-content narrow" id="main-content" tabindex="-1">
       <article class="card document">
         <h1>Terms and Disclaimer</h1>
         <p>
@@ -57,6 +58,11 @@
 
         <h2>Beta software</h2>
         <!-- TODO: Remove or rewrite this beta-specific section before public App Store release. It can stay for TestFlight. -->
+        <p>
+          The current beta is distributed through TestFlight for iPhone and iPad.
+          Android, accounts, cloud sync, subscriptions, and backend services are not
+          available in the current beta.
+        </p>
         <p>
           During beta testing, features, calculations, storage behavior,
           print/export behavior, and user interface behavior may change. Verify all

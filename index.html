@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header">
       <div class="container header-inner">
         <a class="site-title" href="index.html" aria-label="Oilfield Tubing Tally home">
@@ -29,7 +30,7 @@
       </div>
     </header>
 
-    <main class="page-content" id="top">
+    <main class="page-content" id="main-content" tabindex="-1">
       <section class="container hero landing-hero">
         <div class="hero-grid">
           <div class="hero-copy">
@@ -45,7 +46,7 @@
             </p>
             <div class="button-row" aria-label="Beta actions">
               <a class="button primary" href="https://testflight.apple.com/join/KGdJaCgT">
-                Download on TestFlight
+                Join the iOS/iPadOS Beta on TestFlight
               </a>
               <a class="button" href="#how-it-works">Learn More</a>
             </div>
@@ -58,6 +59,7 @@
       </section>
 
       <section class="container feature-strip" aria-label="Oilfield Tubing Tally features">
+        <h2 class="visually-hidden">Features</h2>
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">
             <svg viewBox="0 0 24 24" width="28" height="28" focusable="false">
@@ -97,7 +99,7 @@
       </section>
 
       <section class="container light-panel how-it-works" id="how-it-works">
-        <p class="eyebrow">How It Works</p>
+        <h2 class="eyebrow">How It Works</h2>
         <div class="steps">
           <article class="step">
             <div class="step-icon-wrap">
@@ -160,6 +162,7 @@
       </section>
 
       <section class="container light-panel screenshot-panel" id="screenshots">
+        <h2 class="visually-hidden">App screenshots</h2>
         <div class="screenshot-grid">
           <article class="screenshot-card">
             <img src="screenshots/job-info-light.png" alt="Job Info screen showing well name, job date, and notes" />
@@ -199,8 +202,8 @@
           </ul>
         </div>
         <div class="report-images">
-          <img src="screenshots/report-page-1.png" alt="Oilfield Tubing Tally PDF report page one" />
-          <img src="screenshots/report-page-3.png" alt="Oilfield Tubing Tally PDF report page three" />
+          <img src="screenshots/report-page-1.png" alt="Demo PDF report showing job setup, totals, and calculated joint rows." />
+          <img src="screenshots/report-page-3.png" alt="Demo PDF report continuation showing later calculated joint rows." />
         </div>
       </section>
 
@@ -213,7 +216,7 @@
           </p>
           <div class="button-row">
             <a class="button primary" href="https://testflight.apple.com/join/KGdJaCgT">
-              Download on TestFlight
+              Join the iOS/iPadOS Beta on TestFlight
             </a>
           </div>
         </div>
@@ -221,7 +224,7 @@
           <h2>How to install</h2>
           <ol class="install-steps">
             <li>Download the TestFlight app.</li>
-            <li>Click our Download on TestFlight button.</li>
+            <li>Tap our Join the iOS/iPadOS Beta on TestFlight button.</li>
             <li>Accept the invitation and view the app in TestFlight.</li>
             <li>Install the app and start tallying.</li>
           </ol>
@@ -237,11 +240,11 @@
             <div class="tester-card-copy">
               <h3>Want to be a named iOS tester?</h3>
               <p>
-                The public TestFlight link works without a form. Fill this out only if you want to be contacted for direct feedback, bug reports, or future testing.
+                This Google Form asks for your contact information, device, role, and testing feedback. Do not include customer, well, lease, personnel, or job data.
               </p>
             </div>
-            <a class="button tester-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeQOKlSQHjr9TGI9lwuAEzwMfUP2QIlTaUS2lN_r37uoS_1oA/viewform?usp=header" target="_blank" rel="noopener noreferrer" aria-label="Join the iOS tester list">
-              Join iOS Tester List
+            <a class="button tester-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeQOKlSQHjr9TGI9lwuAEzwMfUP2QIlTaUS2lN_r37uoS_1oA/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+              Join iOS Tester List<span class="visually-hidden"> (opens in a new tab)</span>
             </a>
           </article>
           <article class="tester-card tester-card-android">
@@ -255,11 +258,11 @@
             <div class="tester-card-copy">
               <h3>Use Android?</h3>
               <p>
-                Android support is planned. Join the interest list if you want to be contacted when Android testing opens.
+                Android support is planned but not available yet. Join the interest list if you want to be contacted when Android testing opens.
               </p>
             </div>
-            <a class="button tester-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeE-5XJQgkFIjA-pkTyPq95oX7RPIwSY5m1NbZWNVMayE_xew/viewform?usp=header" target="_blank" rel="noopener noreferrer" aria-label="Join the Android interest list">
-              Join Android Interest List
+            <a class="button tester-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeE-5XJQgkFIjA-pkTyPq95oX7RPIwSY5m1NbZWNVMayE_xew/viewform?usp=header" target="_blank" rel="noopener noreferrer">
+              Join Android Interest List<span class="visually-hidden"> (opens in a new tab)</span>
             </a>
           </article>
         </div>
