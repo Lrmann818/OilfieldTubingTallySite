@@ -479,6 +479,13 @@ p {
   color: #dbe7ec;
 }
 
+.hero-note {
+  max-width: 560px;
+  margin: 16px 0 0;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
 .grid {
   display: grid;
   gap: 24px;
